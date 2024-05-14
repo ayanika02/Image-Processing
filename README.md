@@ -19,17 +19,17 @@ enough light.
 
 **Algorithm**
 
-**1. Image pre-processing**
-• Read an image and convert it to grayscale
-• Blur the image using Gaussian Kernel to remove unnecessary edges/ reduce noises.
+**1. Image pre-processing** <br/>
+• Read an image and convert it to grayscale <br/>
+• Blur the image using Gaussian Kernel to remove unnecessary edges/ reduce noises. <br/>
 • Edge detection using Canny edge detector is performed on the blurred image using a 
-threshold value.
-• Create a kernel for morphological operations (dilation and erosion) using NumPy.
-• Dilate the edges obtained from Canny edge detection to make them more contiguous.
-• Erode the dilated image to further refine the edges.
+threshold value.  <br/>
+• Create a kernel for morphological operations (dilation and erosion) using NumPy.  <br/>
+• Dilate the edges obtained from Canny edge detection to make them more contiguous.  <br/>
+• Erode the dilated image to further refine the edges.  <br/>
 
-**2. Reference object**
-• Calculate how many pixels are there per metric (centimeter is used here)
+**2. Reference object** <br/>
+• Calculate how many pixels are there per metric (centimeter is used here)  <br/>
 
-**3. Compute results**
-• Draw bounding boxes around each object and calculate its height and width
+**3. Compute results** <br/>
+• Draw bounding boxes around each object and calculate its height and width  <br/>
